@@ -1,2 +1,2 @@
 #!/bin/bash
-parent_dir=$(dirname "$(pwd)"); for file in *.html; do destination="$parent_dir/$file"; [ ! -e "$destination" ] || [ "$file" -nt "$destination" ] && cp "$file" "$destination"; done
+parent_dir=$(dirname "$(pwd)") for file in *html; do cp "$file" "$parent_dir" done
