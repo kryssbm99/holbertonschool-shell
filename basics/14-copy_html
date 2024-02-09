@@ -1,2 +1,2 @@
 #!/bin/bash
-cp -v ../*.html ../../folder_destination/
+find . -maxdepth 1 -name '*.html' -exec cp --update --parents '{}' ../ \;
